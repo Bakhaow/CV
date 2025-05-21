@@ -15,7 +15,8 @@ header {
   align-items: center;
   justify-content: flex-start;
   padding: 20px;
-  background-color: rgb(0, 204, 255);
+  background-color: #17abb3;
+  color: #fff;
   border-bottom: 1px solid #ddd;
   gap: 20px;
 }
@@ -55,7 +56,6 @@ header h2 {
   margin: 5px 0 10px;
   font-size: 18px;
   font-weight: normal;
-  color: #777;
   font-family: "Raleway", sans-serif;
   text-align: center;
 }
@@ -87,15 +87,27 @@ header ul li {
   width: 45%;
 }
 
+header ul li:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
 header ul li img {
   width: 18px;
   height: 18px;
+  margin-right: 5px;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  padding: 20px;
   gap: 20px;
   max-width: 1200px;
   margin: auto;
@@ -105,15 +117,13 @@ main {
   flex: 1;
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .droite {
   flex: 2;
-  background-color: #ececec;
+  background-color: #e3e3e3;
   padding: 20px;
-  border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -124,7 +134,7 @@ section {
 h3 {
   margin-bottom: 10px;
   font-size: 20px;
-  color: #222;
+  color: #17abb3;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
   font-family: "Lato", sans-serif;
@@ -136,6 +146,18 @@ h3 {
 #interets ul {
   list-style: none;
   padding: 0;
+}
+
+#qualites ul,
+#interets ul {
+  list-style: square;
+  margin-left: 25px;
+}
+
+#qualites li::marker,
+#interets li::marker {
+  color: #17abb3;
+  font-size: 25px;
 }
 
 #competences li,
@@ -179,20 +201,21 @@ article .title {
 
 article .date {
   padding: 10px;
+  color: #17abb3;
 }
 
 article:hover {
-  background-color: #eef6f2;
-  border-left: 4px solid #4caf50;
+  background-color: #f5f5f5;
+  border-left: 4px solid #17abb3;
   padding-left: 16px;
 }
 
 footer {
-  background-color: rgb(0, 204, 255);
+  background-color: #17abb3;
+  color: #fff;
   text-align: center;
   padding: 30px 0 10px 0;
   border-top: 1px solid #ddd;
-  margin-top: 40px;
 }
 
 #reseaux-sociaux {
@@ -206,6 +229,15 @@ footer {
 
 #reseaux-sociaux img:hover {
   opacity: 0.7;
+}
+
+.stars {
+  color: #17abb3;
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
