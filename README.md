@@ -13,11 +13,12 @@ A personal CV/resume website built with HTML and CSS. This project was created a
 
 ```
 CV/
+├── assets/             # Assets directory
+│   ├── img/            # Images directory
+│   └── css/            # Styles directory
+│       └── style.css   # Main stylesheet
 ├── index.html          # Main HTML file
-├── styles/            # CSS styles directory
-│   └── style.css      # Main stylesheet
-├── assets/           # Images and other assets
-└── README.md         # This file
+└── README.md           # This file
 ```
 
 ## Getting Started
